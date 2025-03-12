@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume</title>
+  <script src="https://unpkg.com/feather-icons"></script>
+  <link rel="stylesheet" href="style.css">
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function () {
+      // https://dashboard.emailjs.com/admin/account
+      emailjs.init({
+        publicKey: "L8GMELQFjSpneEv2A",
+      });
+    })();
+  </script>
+  <script type="text/javascript">
+    window.onload = function () {
+      document.getElementById('contact-form').addEventListener('submit', function (event) {
+        event.preventDefault();
+        // these IDs from the previous steps
+        emailjs.sendForm('service_p3sf1ga', 'template_mjtnors', this)
+          .then(() => {
+            console.log('SUCCESS!');
+          }, (error) => {
+            console.log('FAILED...', error);
+          });
+      });
+    }
+  </script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="profile">
+      <div class="profile_container">
+        <div class="profile_profileImg">
+          <img src="zunik.png" alt="Zuni Khan">
+        </div>
+        <div>
+          <h1 class="profile_name">
+            <span class="profile_name_firstName">Oshin </span>
+            <span class="profile_name_lastName"> Khan </span>
+          </h1>
+          <p class="profile_title" style="font-size: 20px;">Software Developer </p>
+          <p class="description profile_description" style="font-size: 20px;">
+            I am Oshin Khan, a 2nd year student at <b><i>Jaipur National University</i></b> pursuing a degree in <b><i>Bachelor of Computer Application</i></b>. I am excited to apply for the content writing position. 
+            Throughout my studies, I have developed strong skills in <b><i>Gemini</i></b>, <b><i>copyspace</i></b>, <b><i>people also asked</i></b>, Etc. I am eager to bring my enthusiasm, dedication, and willingness to learn to your team.
+            I believe my fast learning abilities, commitment to succeed, and relevant studies make me the perfect fit for this position.
+
+
+          </p>
+          <a class="downloadBtn" href="CV.pdf" download="Resume.pdf"><button class="send" style="margin-top: 1.5rem; border: none;">Download Resume</button></a>
+        </div>
+      </div>
+    </div>
+    <div class="group-1">
+      <div class="skills">
+        <h3 class="title">Expertise</h3>
+        <ul class="skills_list description">
+          <li>JavaScript</li>
+          <li>PHP & Wordpress</li>
+          <li>HTML CSS</li>
+          <li>React JS</li>
+          <li>MERN STACK</li>
+        </ul>
+      </div>
+      <div class="ref">
+        <h3 class="title"> Tools that I know</h3>
+        <div class="ref_item">
+          <h4 class="ref_name"> Content-Writing </h4>
+          <ul class="description">
+            <li> Chat GPT </li>
+            <li> Gemini </li>
+            <li> Copyspace </li>
+            <li> Jasper </li>
+            <li> Wordtune </li>
+
+          </ul>
+        </div>
+        <div class="ref_item">
+          <h4 class="ref_name"> Keyword </h4>
+          <ul class="description">
+            <li> People also asked </li>
+            <li> Zero GPT </li>
+            <li> copilate </li>
+            <li> perpexility</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="edu">
+        <h3 class="title">Education</h3>
+        <div class="edu_item">
+          <p class="item_preTitle">2023-2026</p>
+          <h4 class="item_title"> Bachelor in Computer Application </h4>
+          <p class="item_subtitle">
+            Jaipur National University
+          </p>
+        </div>
+        <div class="edu_item">
+          <p class="item_preTitle">2021-2023</p>
+          <h4 class="item_title">11th & 12th </h4>
+          <p class="item_subtitle">
+            Dhruva sr. sec. school
+          </p>
+        </div>
+        <div class="edu_item">
+          <p class="item_preTitle">2019-2020</p>
+          <h4 class="item_title"> 10th </h4>
+          <p class="item_subtitle">
+            Mangalam sr. sec. school
+          </p>
+        </div>
+      </div>
+
+      <div class="certification">
+        <h3 class="title">certification</h3>
+        <div class="certification_item">
+          <p class="item_preTitle">2023</p>
+          <h4 class="item_title"> Python </h4>
+          <p class="description">
+            Samyak Computer classes
+          </p>
+          <a href="python certificate.pdf"> <button class="send" style="margin-top: 1.5rem;"> View </button></a>
+        </div>
+
+        <div class="certification_item">
+          <p class="item_preTitle">2025</p>
+          <h4 class="item_title"> C++ </h4>
+          <p class="description">
+            IIT Bombay Spoken Tutorial
+          </p>
+          <a href="C++ certificate.pdf"> <button class="send" style="margin-top: 1.5rem;"> View </button></a>
+        </div>
+      </div>
+    </div>
+    <div class="group-2">
+      <div class="exp">
+        <h3 class="title">Experience</h3>
+        <div class="exp_item">
+          <p class="item_preTitle">2025 - present</p>
+        </div>
+      </div>
+      <div class="Project">
+        <h3 class="title">Projects</h3>
+        <div class="project_item">
+          <p class="item_preTitle">2023</p>
+          <h4 class="item_title"><a href="Project"> Music Website</a></h4> 
+          
+          <p class=" description">
+            A music website but not completed.
+          </p>
+        </div>
+        <div class="project_item">
+          <p class="item_preTitle">2024</p>
+          <h4 class="item_title"><a href="Sole Jewellers"> Sole jewellers </a></h4>
+          <p class="description">
+            An online buying an selling jewelleries website.
+          </p>
+        </div>
+      </div>
+
+      <div class="interest">
+        <h3 class="title">Interest</h3>
+        <div class="interest_items">
+          <div class="interest_item">
+            <i data-feather="music"></i>
+            <span>Music</span>
+          </div>
+          <div class="interest_item">
+            <i data-feather="book"></i>
+            <span>Books</span>
+          </div>
+          <div class="interest_item">
+            <i data-feather="map"></i>
+            <span>Travel</span>
+          </div>
+        </div>
+        <hr class="thick">
+        <section id="contact">
+          <h2 style="margin-top: 2rem; margin-bottom: 2rem;">Contact Me</h2>
+          <form id="contact-form">
+            <input type="text" placeholder="Your Name" name="user_name" required>
+            <input type="email" placeholder="Your Email" name="user_email" required>
+            <textarea placeholder="Your Message" name="message" required></textarea>
+            <input type="submit" value="Send" class="send">
+          </form>
+        </section>
+
+
+      </div>
+    </div>
+    <hr>
+    <div class="group-3">
+      <div class="contact">
+        <h3 class="title">Contact</h3>
+        <div class="contact_info">
+          <p class="description">
+            Jaipur, Rajasthan
+          </p>
+          <p class="description">
+            +91-9549960721
+          </p>
+          <p class="description">
+            oshinkhan353@gmail.com
+          </p>
+        </div>
+      </div>
+      <div class="social">
+        <h3 class="title">Socials</h3>
+        <div class="social_items">
+          <a href="https://github.com/Zuni699" target="_b" class="social_item">
+            <i data-feather="github"></i>
+            <span> Oshin_khan </span>
+          </a>
+          <a href="https://www.instagram.com/zuni699_khan/" target="_blank" class="social_item">
+            <i data-feather="instagram"></i>
+            <span> zuni699_khan </span>
+          </a>
+          <a href="https://www.linkedin.com/in/oshin-khan-3a676834a/" target="_blank" class="social_item">
+            <i data-feather="linkedin"></i>
+            <span> Oshin Khan </span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      feather.replace()
+    </script>
+</body>
+
+</html>
